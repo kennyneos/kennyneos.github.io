@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--done-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create Customer</title>
+    <meta name="viewport" content="width=dev3ice-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/claimformcss.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/create.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type='text/javascript' src=js/Condition.js> </script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </head>
+    <body>
+        <h2>Application for OIL</h2>
+        <form action="php/create.php" method="post">
+            <fieldset> 
+               <div>
+                   <input name="given" type="radio" value="1" id="given" checked/>Add &nbsp;&nbsp;
+                   <input name="given" type="radio" value="-1" id="given" />Claim
+                </div>
+
+                <div>
+                    <label>Duration:</label>
+                    <select name="days" id="days">
+                        <option value="0.5">0.5</option>
+                        <option value="1.0">1.0</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2.0">2.0</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3.0">3.0</option>
+                        <option value="3.5">3.5</option>
+                        <option value="4.0">4.0</option>
+                        <option value="4.5">4.5</option>
+                        <option value="5.0">5.0</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Date from:</label>
+                      <input type="text" class="datefrom" id= "datefrom" value="" required />
+
+                        <script>
+                        $( function() {
+                        $( ".datefrom" ).datepicker( {dateFormat: "dd/mm/yy"});
+                        } );
+                        </script>  
+                </div>
+                
+                <div>
+                    <label>Date to: </label>
+                        <input type="text" class="dateto" id= "dateto" value="" class='Inputs' required/>
+                     <script>
+                    $( function() {
+                    $( ".dateto" ).datepicker( {dateFormat: "dd/mm/yy"});
+                    } );
+                    </script>
+                </div>
+                
+                <div>
+                        <label>Remarks:</label>
+                    <textarea name="remarks" rows="3" cols="30" id="remarks" class='Inputs' required></textarea>
+                    </div>
+                <div>
+        
+                    <label>Approve By:</label>
+                        <select name="approver" id="approver">
+                        <option test="dyco">DYCO</option>
+                        <option text="oc">OC</option>    
+                        <option text="cc">CC</option>
+                        <option text="opswo">OPSWO</option>
+                    </select>
+                </div>
+                
+
+            </fieldset>
+            <div>
+                <input type="submit" id="submit"  value="Submit"> 
+
+            </div>
+        </form>
+    </body>
+</html>

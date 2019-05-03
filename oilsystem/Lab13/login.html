@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+		<title>Create Customer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+		<script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/create.js" type="text/javascript"></script>
+    
+    <style>
+	div { margin: 20px 10px; }
+	
+	label { font-weight: bold; }
+	fieldset {
+		margin-bottom: 10px;
+	}
+	
+	/* Style inputs, select elements and textareas */
+	input[type=text]{
+		width: 100%;
+		padding: 12px;
+		 border: 1px solid #ccc;
+		 border-radius: 4px;
+		 box-sizing: border-box;
+		resize: vertical;
+	}
+
+	/* Style the label to display next to the inputs */
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+
+	/* Style the submit button */
+	input[type=submit],  input[type=reset]{
+		background-color: #4CAF50;
+		color: white;
+		 padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		 float: right;
+	}
+</style>
+    
+    
+</head>
+<body>
+    <h2>Login</h2>
+    <form>
+        <fieldset>
+            <legend>Login Page</legend>
+            <div>
+                <label for="userid">UserID:</label>
+                <input name="userid" id="userid" type="text" />  
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input name="password" id="password" type="text" />  
+            </div> 
+        </fieldset>
+            <div>
+                <input id="login_button" type="button" value="Login" />
+
+            </div> 
+     </form>
+    
+    
+    
+
+</body>
+</html>

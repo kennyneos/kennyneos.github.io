@@ -1,0 +1,78 @@
+fieldset{
+  -webkit-border-top-left-radius: 16px;
+  -webkit-border-top-right-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -webkit-border-bottom-right-radius: 16px;
+  border: 3px solid #ffffff;
+  background-color: white;
+  color: Black;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  -webkit-border-top-left-radius: 16px;
+  -webkit-border-top-right-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -webkit-border-bottom-right-radius: 16px;
+  border: 3px solid #ffffff;
+  background-color: #c4c0c0;
+  
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #f2bd10;
+         border: none;
+         color: black;
+         float: center;
+         text-align: center;
+         text-decoration: none;
+         font-size: 20px;
+         font-family: sans-serif;
+         width: 30%;
+         padding: 10px 10px 10px;
+         border: 1px;
+         border-radius: 6px;
+         box-sizing: border-box;
+         resize: Vertical; 
+         font-weight: bold;
+    -webkit-border-top-left-radius: 16px;
+  -webkit-border-top-right-radius: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -webkit-border-bottom-right-radius: 16px;
+  border: 3px solid #ffffff;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+ 
+}
+body{
+   background-color: #070707;
+         border: none;
+         color: white;
+         padding: 30px 40px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 35px;
+         font-family: sans-serif;
+         margin: 4px 2px;
+         font: Arial;
+         width: 100%;
+         border: 1px;
+         border-radius: 6px;
+         box-sizing: border-box;
+         resize: Vertical; 
+         font-weight: bold;
+  
+         }
+  
+}

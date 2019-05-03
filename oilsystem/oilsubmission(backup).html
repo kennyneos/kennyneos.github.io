@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create Customer</title>
+    <meta name="viewport" content="width=dev3ice-width, initial-scale=1.0"/>
+    <style>
+        div { margin: 20px 10px; }
+        label { font-weight: bold; }
+        fieldset {
+            margin-bottom: 10px;
+        }
+        /* Style inputs, select elements and textareas */
+        input[type=text]{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        /* Style the label to display next to the inputs */
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        /* Style the submit button */
+        input[type=submit], input[type=reset]{
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            }
+    </style>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/create.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <h2>Application for OIL</h2>
+        <form action="php/create.php" method="post">
+            <fieldset> 
+                <legend>Insert Information here</legend>
+<!--
+                <div>
+                    <label>Gender :</label>
+                    <input name="gender" type="radio" value="M" />Male &nbsp;&nbsp;
+                    <input name="gender" type="radio" value="F" />Female
+                </div>
+-->
+                
+               <div>
+                   <label>Given/Claimed :</label>
+                   <input name="given" type="radio" value="1" id="given"/>Given &nbsp;&nbsp;
+                   <input name="given" type="radio" value="-1" id="given"/>Claimed
+                </div>
+
+                <div>
+                    <label>No.Days :</label>
+                    <select name="days" id="days">
+                        <option value="0.5">0.5</option>
+                        <option value="1.0">1.0</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2.0">2.0</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3.0">3.0</option>
+                        <option value="3.5">3.5</option>
+                        <option value="4.0">4.0</option>
+                        <option value="4.5">4.5</option>
+                        <option value="5.0">5.0</option>
+                    </select>
+                </div>
+                <div>
+                        <label>Remarks :</label>
+                    <textarea name="remarks" rows="3" cols="30" id="remarks"></textarea>
+                    </div>
+                <div>
+                    <label>Approver :</label>
+                        <select name="approver" id="approver">
+                        <option test="dyco">DYCO</option>
+                        <option text="oc">OC</option>    
+                        <option text="cc">CC</option>
+                        <option text="opswo">OPSWO</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label>Date from:</label>
+                      <input type="text" class="datefrom" value="" />
+
+<script>
+  $( function() {
+        $( ".datefrom" ).datepicker( {dateFormat: "yy/dd/mm"});
+        
+        } );
+</script>
+
+                </div>
+                <div> <label>Date to:</label>
+                    
+                    <input type="text" class="dateto" value="" />
+                    
+                    <script>
+    $( function() {
+        $( ".dateto" ).datepicker( {dateFormat: "yy/dd/mm"});
+        
+        } );
+                    </script>
+
+                </div>
+            </fieldset>
+            <div>
+                <input type="button" id="submit" value="Create" />
+            </div>
+        </form>
+    </body>
+</html>
